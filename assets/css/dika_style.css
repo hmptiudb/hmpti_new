@@ -1,0 +1,855 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  background: #fff !important;
+  color: #666666 !important;
+  font-family: "Open Sans", sans-serif;
+}
+
+::selection {
+  color: #18d26e;
+}
+
+.search-btn {
+  background-color: #18d36e !important;
+  vertical-align: unset !important;
+}
+
+button.btn:hover {
+  background-color: transparent !important;
+  border-color: #18d36e !important;
+  transition: 0.3s ease-in-out !important;
+}
+
+a.btn-get-started:hover {
+  background-color: transparent !important;
+  border-color: #18d36e !important;
+  color: white !important;
+  transition: 0.3s ease-in-out !important;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: #18d36e !important;
+  outline: none !important;
+  text-decoration: none !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 400 !important;
+  margin: 0 0 20px 0 !important;
+  padding: 0 !important;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  padding: 30px 0 !important;
+  height: 92px !important;
+  position: fixed !important;
+  left: 0 !important;
+  top: 0 !important;
+  right: 0 !important;
+  transition: all 0.5s !important;
+  z-index: 997 !important;
+}
+
+#header.header-scrolled {
+  background: rgba(0, 0, 0, 0.9) !important;
+  padding: 20px 0 !important;
+  height: 72px !important;
+  transition: all 0.5s !important;
+}
+
+#header #logo {
+  float: left !important;
+}
+
+#header #logo img {
+  margin: -7px 0 0 0 !important;
+}
+
+/*--------------------------------------------------------------
+# Intro Section
+--------------------------------------------------------------*/
+#intro {
+  display: table !important;
+  width: 100% !important;
+  height: 100vh !important;
+  background: #000 !important;
+}
+
+#intro .carousel-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex !important;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center !important;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center !important;
+  position: absolute !important;
+  bottom: 0 !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+}
+
+#intro .carousel-content {
+  text-align: center !important;
+}
+
+#intro h2 {
+  color: #fff !important;
+  margin-bottom: 30px !important;
+  font-size: 45px !important;
+  font-weight: 700 !important;
+}
+
+#intro p {
+  width: 80% !important;
+  margin: 0 auto 30px auto !important;
+  color: #fff !important;
+}
+
+#intro .carousel-indicators li {
+  cursor: pointer !important;
+}
+
+#intro .carousel-item {
+  width: 100% !important;
+  height: 100vh !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+#intro .carousel-item::before {
+  content: "" !important;
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  position: absolute !important;
+  height: 100% !important;
+  width: 100% !important;
+  top: 0 !important;
+  right: 0 !important;
+  left: 0 !important;
+  bottom: 0 !important;
+}
+
+#intro .btn-get-started {
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  letter-spacing: 1px !important;
+  display: inline-block !important;
+  padding: 8px 32px !important;
+  border-radius: 50px !important;
+  transition: 0.5s !important;
+  margin: 10px !important;
+  color: #fff !important;
+  border: 1px solid #18d26e !important;
+  background: #18d26e !important;
+}
+
+#intro .btn-get-started:hover {
+  background: transparent !important;
+  color: #fff !important;
+  border: 1px solid #18d26e !important;
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/* Nav Menu Essentials */
+.navbar-nav,
+.navbar-nav * {
+  margin: 0 !important;
+  /* padding: 0; */
+  list-style: none !important;
+}
+
+.nav-menu ul {
+  position: absolute !important;
+  display: none !important;
+  top: 100% !important;
+  left: 0 !important;
+  z-index: 99 !important;
+}
+
+.navbar-nav li {
+  position: relative !important;
+  white-space: nowrap !important;
+}
+
+.navbar-nav > li {
+  float: left !important;
+}
+
+/* Nav Meu Container */
+#nav-menu-container {
+  float: right !important;
+  margin: 0 !important;
+  margin-top: -3px !important;
+}
+
+/* Nav Meu Styling */
+.navbar-nav a {
+  padding: 10px 25px 10px 8px !important;
+  text-decoration: none !important;
+  display: inline-block !important;
+  /* color: #fff !important; */
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 13px !important;
+  text-transform: uppercase !important;
+  outline: none !important;
+}
+
+.navbar-nav li:hover > a,
+.navbar-nav > .menu-active > a {
+  color: #18d26e !important;
+}
+
+.navbar-nav > li {
+  margin-left: 25px !important;
+}
+
+a.navbar-nonaktif {
+  color: white !important;
+}
+
+.nav-color {
+  background: rgba(0, 0, 0, 0.8);
+  transition: all 0.5s;
+}
+
+.bg-transparent {
+  transition: all ease-in 0.5s;
+}
+
+/* FOOTER */
+#footer {
+  background-color: #2b3d89;
+  color: white;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+.footer-text {
+  font-size: 25px;
+  font-weight: 600;
+}
+.footer-icon {
+  font-size: 25px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.footer-spacing-icon {
+  padding: 12px;
+}
+.copyright {
+  margin-bottom: 30px;
+}
+
+/* DIVISI */
+#divisiHMP img.dvs {
+  background-size: cover;
+  position: absolute;
+  width: 42%;
+  margin-top: 6rem;
+  left: 29%;
+  opacity: 0.1;
+}
+
+/* VISI MISI */
+.visi-body {
+  background-color: #2b3d89;
+  margin-top: -50px;
+  padding: 7rem;
+}
+
+.img-visi-misi {
+  background-color: white;
+  border-radius: 10%;
+  width: 80%;
+  padding: 2rem;
+}
+
+/* Mobile Nav Toggle */
+#mobile-nav-toggle {
+  position: fixed !important;
+  right: 0 !important;
+  top: 0 !important;
+  z-index: 999 !important;
+  margin: 20px 20px 0 0 !important;
+  border: 0 !important;
+  background: none !important;
+  font-size: 24px !important;
+  display: none !important;
+  transition: all 0.4s !important;
+  outline: none !important;
+  cursor: pointer !important;
+}
+
+/* Mobile Nav Styling */
+#mobile-nav {
+  position: fixed !important;
+  top: 0 !important;
+  padding-top: 18px !important;
+  bottom: 0 !important;
+  z-index: 998 !important;
+  background: rgba(0, 0, 0, 0.8) !important;
+  left: -260px !important;
+  width: 260px !important;
+  overflow-y: auto !important;
+  transition: 0.4s !important;
+}
+
+/* ---------------------------------------------------
+# Sections Header
+--------------------------------------------------*/
+.section-header h3 {
+  font-size: 32px !important;
+  color: #111 !important;
+  text-transform: uppercase !important;
+  text-align: center !important;
+  font-weight: 700 !important;
+  position: relative !important;
+  padding-bottom: 15px !important;
+}
+
+.section-header h3::before {
+  content: "" !important;
+  position: absolute !important;
+  display: block !important;
+  width: 120px !important;
+  height: 1px !important;
+  background: #ddd !important;
+  bottom: 1px !important;
+  left: calc(50% - 60px) !important;
+}
+
+.section-header h3::after {
+  content: "" !important;
+  position: absolute !important;
+  display: block !important;
+  width: 40px !important;
+  height: 3px !important;
+  background: #18d26e !important;
+  bottom: 0 !important;
+  left: calc(50% - 20px) !important;
+}
+
+.section-header p {
+  text-align: center !important;
+  padding-bottom: 30px !important;
+  color: #333 !important;
+  font-style: italic !important;
+}
+
+/* -------------------------------------------------------------
+# About Us Section
+----------------------------------------------------------------*/
+#about {
+  padding: 60px 0 40px 0 !important;
+}
+.btn-get-started {
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  letter-spacing: 1px !important;
+  display: inline-block !important;
+  padding: 8px 32px !important;
+  border-radius: 50px !important;
+  transition: 0.5s !important;
+  color: #fff !important;
+  border: 1px solid #18d26e !important;
+  background: #18d26e !important;
+  text-align: center;
+}
+
+/* STRUKTUR ORGANISASI */
+#ormawa {
+  background-color: #2b3d89;
+  color: #fff;
+  margin-top: -50px;
+}
+#ormawa .wow {
+  visibility: visible !important;
+}
+#ormawa .card-tmb {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  visibility: visible !important;
+  /* row-gap: 2rem; */
+}
+#ormawa .headline-event {
+  padding-top: 7rem !important;
+}
+#ormawa .card-dk {
+  width: 48%;
+  height: 250px;
+  justify-content: center !important;
+  margin: 10px;
+  border: none;
+  background: linear-gradient(135deg, #e6212a, #2b3d89, #cd9933);
+  text-align: left;
+  border-radius: 1.5rem;
+}
+#ormawa .card-dk img {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  height: auto;
+  transition: 0.5s;
+  margin-top: -12rem;
+  width: 30%;
+  border-radius: 50%;
+}
+#ormawa .card-dk:hover img {
+  left: 76%;
+}
+#ormawa .info-content {
+  position: relative;
+  width: 50%;
+  padding: 40px 0px 20px 40px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+#ormawa .card-dk:hover .info-content {
+  opacity: 1;
+  visibility: visible;
+  left: 0%;
+}
+#ormawa .btn-get-detail {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 32px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: #fff;
+  border: 1px solid #18d26e;
+  background: #18d26e;
+  text-align: center;
+  margin-top: 2rem;
+}
+#ormawa .btn-get-detail:hover {
+  background-color: transparent;
+  border-color: #18d36e;
+  color: white !important;
+  transition: 0.3s ease-in-out;
+}
+
+/* DETAIL PROFIL ANGGOTA */
+#ormawa .headline-event {
+  text-transform: uppercase;
+}
+#ormawa .detail-anggota {
+  height: 622px;
+}
+
+/* POPUP DETAIL */
+.popup {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+.popup-content {
+  width: 50%;
+  background: linear-gradient(135deg, #e6212a, #2b3d89, #cd9933);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  border-radius: 1rem;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.25);
+
+  opacity: 0;
+  transition: all 0.5s 0.1s;
+}
+.popup-img {
+  display: flex;
+  width: 100%;
+  margin-bottom: 30px;
+  margin-top: 1.5rem;
+  justify-content: center;
+}
+.popup-img img {
+  width: 30%;
+  border-radius: 50%;
+}
+.popup-header {
+  text-align: center;
+  text-transform: uppercase;
+  color: #555;
+  margin-bottom: 36px;
+}
+.popup-header h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.popup-header h2 {
+  font-size: 20px;
+}
+.popup-teks {
+  padding: 0 36px;
+  line-height: 1.4;
+}
+
+#popup:target {
+  opacity: 1;
+  visibility: visible;
+}
+#popup:target .popup-content {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.popup-close:link,
+.popup-close:visited {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  text-decoration: none;
+  color: white;
+  font-size: 3rem;
+  display: inline-block;
+  line-height: 1;
+  transition: all 0.3s;
+}
+
+/* DIVISI ANGGOTA */
+#ormawa .card-dvs {
+  width: 48%;
+  height: auto;
+  justify-content: center !important;
+  margin: 10px;
+  border: none;
+  background: linear-gradient(135deg, #e6212a, #2b3d89, #cd9933);
+  text-align: left;
+  border-radius: 1.5rem;
+}
+#ormawa .card-dvs img {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  height: auto;
+  transition: 0.5s;
+  margin-top: -12rem;
+  width: 30%;
+  border-radius: 50%;
+}
+#ormawa .card-dvs:hover img {
+  left: 76%;
+}
+#ormawa .card-dvs .info-content {
+  position: relative;
+  width: 100%;
+  left: 20%;
+  padding: 30px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+  white-space: normal;
+  text-overflow: unset;
+}
+#ormawa .card-dvs:hover .info-content {
+  opacity: 1;
+  visibility: visible;
+  left: 0%;
+}
+
+/* CARD SEARCH */
+#ormawa .card-sc {
+  width: 75% !important;
+  height: 100px;
+  justify-content: center !important;
+  margin: 10px;
+  border: none;
+  background: linear-gradient(135deg, #e6212a, #2b3d89, #cd9933);
+  text-align: left;
+  border-radius: 1.5rem;
+}
+#ormawa .info-content-sc {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  transition: 0.5s;
+  /* white-space: nowrap;
+  text-overflow: ellipsis; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1 !important;
+  color: white;
+}
+#ormawa .card-sc:hover img {
+  opacity: 1;
+  visibility: visible;
+}
+#ormawa .card-sc:hover .info-content-sc {
+  color: #18d26e;
+}
+#ormawa .info-content-sc .nama-sc {
+  color: white;
+}
+#ormawa .card-sc:hover .info-content-sc .nama-sc {
+  color: #18d26e;
+  transition: 0.5s;
+}
+/*--------------------------------------------------------------
+# Responsive Media Queries
+--------------------------------------------------------------*/
+@media (min-width: 1024px) {
+  #header #logo {
+    padding-left: 60px !important;
+  }
+  #search_event {
+    margin-left: 40px;
+  }
+
+  #intro p {
+    width: 60% !important;
+  }
+
+  #intro .carousel-control-prev,
+  #intro .carousel-control-next {
+    width: 5% !important;
+  }
+
+  #nav-menu-container {
+    padding-right: 100px !important;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #search_event {
+    margin-left: 60px;
+  }
+}
+
+/* 1024px */
+/* 992px */
+/* 768px */
+
+@media screen and (max-width: 768px) {
+  #intro .carousel-content {
+    padding-top: 3.5rem;
+  }
+  strong {
+    font-weight: bold !important;
+    font-size: 13px !important;
+  }
+  .back-to-top {
+    bottom: 15px !important;
+  }
+  .col-lg-12 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  .lead {
+    padding: 1rem;
+  }
+  hr {
+    border-top: 0px !important;
+  }
+  .garis-bawah {
+    height: 2px !important;
+  }
+  .garis-putih {
+    height: 2px !important;
+  }
+  .event-list {
+    visibility: visible !important;
+  }
+
+  #header #logo h1 {
+    font-size: 28px !important;
+  }
+
+  #header #logo img {
+    max-height: 40px !important;
+  }
+
+  #intro {
+    height: 73vh !important;
+  }
+  #intro .carousel-item {
+    height: 73vh !important;
+  }
+  #intro h2 {
+    font-size: 28px !important;
+  }
+
+  #nav-menu-container {
+    display: none !important;
+  }
+
+  #mobile-nav-toggle {
+    display: inline !important;
+  }
+  #ormawa .info-content-sc .sc {
+    padding: 1rem !important;
+    margin-bottom: 0px !important;
+    text-align: center;
+  }
+
+  #search_event {
+    margin-top: -55px;
+    margin-left: 17%;
+  }
+
+  .nav-custom-bos {
+    width: 100%;
+    margin-top: 10px !important;
+    margin-left: auto !important;
+    padding-left: 33px;
+  }
+
+  .section-header h3 {
+    font-size: 23px !important;
+    color: #111 !important;
+    text-transform: uppercase !important;
+    text-align: center !important;
+    font-weight: 700 !important;
+    position: relative !important;
+    padding-bottom: 15px !important;
+  }
+
+  .section-header p {
+    text-align: center !important;
+    padding-bottom: 30px !important;
+    color: #333 !important;
+    font-size: 13px !important;
+    font-style: italic !important;
+  }
+
+  /* VISI MISI */
+  .visi-body {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 6rem;
+    padding-top: 6rem;
+  }
+  .img-visi-misi {
+    background-color: white;
+    border-radius: 10%;
+    width: 50%;
+    padding-left: 1rem;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+    /* padding-top: 2rem; */
+  }
+  /* .text-center {
+    padding-bottom: 1rem;
+  } */
+  .display-3 {
+    font-size: 2.5rem;
+    padding-top: 2.5rem !important;
+    margin-bottom: 7px !important;
+  }
+  .missing {
+    display: none;
+  }
+  .garis-putih-vision {
+    width: 100% !important;
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+    opacity: 1;
+  }
+  .btn-get-started {
+    padding: 7px 0px !important;
+  }
+
+  /* DIVISI */
+  .col-sm-3 {
+    flex: 0 0 25% !important;
+    max-width: 25% !important;
+  }
+  #divisiHMP img.dvs {
+    width: 70%;
+    height: 33%;
+    margin-top: 9rem;
+    left: 15%;
+  }
+  .overlayinfo h6 {
+    font-size: 8px !important;
+  }
+  .dvs-mobile {
+    visibility: visible !important;
+    animation: fadeInUp !important;
+  }
+
+  /* STRUKTUR ORGANISASI */
+  #ormawa.m-fix {
+    margin-left: -31px;
+  }
+  #ormawa .card-dk {
+    width: 87%;
+    margin: 2rem;
+  }
+  #ormawa .m0 {
+    margin: 8px;
+  }
+  #ormawa .mbmt-8 {
+    margin-bottom: 8px !important;
+    margin-top: 8px !important;
+  }
+  #ormawa .info-content {
+    padding: 40px 0px 20px 30px;
+  }
+  #ormawa .card-dk:hover img {
+    left: 77%;
+  }
+  #ormawa .card-dvs {
+    width: 96%;
+  }
+
+  /* PROFIL */
+  #ormawa .img-cstm {
+    width: 200px !important;
+  }
+  #ormawa .prof-head {
+    padding-left: 10px;
+    color: #fff !important;
+    text-align: center;
+  }
+  #ormawa .prof-p {
+    padding-left: 10px;
+    color: #fff !important;
+  }
+  #ormawa .head-desk {
+    margin-bottom: 2rem;
+  }
+}
